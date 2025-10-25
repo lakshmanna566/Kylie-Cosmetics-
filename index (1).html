@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kylie Cosmetics - Cherry Collection</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #fff; }
+    header {
+      padding: 18px 0 10px 18px;
+      background: #fff;
+      border-bottom: 1px solid #eee;
+    }
+    .banner {
+      background: #7c263a;
+      color: white;
+      text-align: center;
+      padding: 40px 20px 80px 20px;
+      position: relative;
+    }
+    .banner img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 12px;
+      margin-bottom: 16px;
+    }
+    .shop-now-btn {
+      background: #e55b6e;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 25px;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 18px;
+      transition: background 0.2s;
+    }
+    .shop-now-btn:hover {
+      background: #cd3355;
+    }
+    .project-by {
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+      margin: 28px 0 12px 0;
+      color: #e55b6e;
+      letter-spacing: 1px;
+    }
+    .section {
+      padding: 18px;
+    }
+    .featured-title {
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+    .category-title {
+      color: #e55b6e;
+      font-weight: bold;
+      margin-top: 16px;
+      margin-bottom: 10px;
+    }
+    .product-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+    .product-card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.09);
+      padding: 14px;
+      width: 160px;
+      text-align: center;
+    }
+    .product-img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      margin-bottom: 8px;
+    }
+    .product-name {
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+    .product-desc {
+      font-size: 0.95em;
+      color: #666;
+    }
+    /* Simulated mobile bottom nav */
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100vw;
+      background: #fafafa;
+      border-top: 1px solid #eee;
+      display: flex;
+      justify-content: space-around;
+      padding: 8px 0;
+      z-index: 100;
+    }
+    .bottom-nav .nav-item {
+      text-align: center;
+      color: #888;
+      font-size: 13px;
+    }
+    .bottom-nav .active {
+      color: #e55b6e;
+      font-weight: bold;
+    }
+    @media (max-width: 600px) {
+      .product-list { flex-direction: column; align-items: center; }
+      .product-card { width: 90vw; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2 style="margin: 0;">KYLIE COSMETICS</h2>
+  </header>
+
+  <div class="banner">
+    <!-- You can put an image here if you want -->
+    <!-- <img src="your-banner-image.jpg" alt="Cherry Collection Banner"> -->
+    <h1>The Cherry Collection</h1>
+    <p>Sweet, Seductive, and Bold. Discover the new look.</p>
+    <button class="shop-now-btn">Shop Now</button>
+  </div>
+
+  <!-- "Project by Hasini" added at the marked spot -->
+  <div class="project-by">Project by Hasini</div>
+
+  <div class="section">
+    <div class="featured-title">Featured Items</div>
+    <div class="category-title">Lips</div>
+    <div class="product-list">
+      <div class="product-card">
+        <img src="https://cdn.shopify.com/s/files/1/0250/4218/1006/products/ky-shadow-palette-press-powder-kyshadow-palette-kyshadows-kyshadowkyliecosmetics-kyshadow-kyliecosmetics-kyshadows-kyshadow-palette-kylie-01_600x.png?v=1620067257" alt="Cherry Red Lip Kit" class="product-img"/>
+        <div class="product-name">Lip Kit – Cherry Red</div>
+        <div class="product-desc">Includes liner, matte liquid lipstick, and lipstick.</div>
+      </div>
+      <!-- Add more product cards as needed -->
+    </div>
+  </div>
+
+  <!-- Simulated bottom navigation bar for mobile look -->
+  <div class="bottom-nav">
+    <div class="nav-item active">Home</div>
+    <div class="nav-item">Games</div>
+    <div class="nav-item">Tabs</div>
+    <div class="nav-item">Menu</div>
+  </div>
+</body>
+</html>
